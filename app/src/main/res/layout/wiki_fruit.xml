@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/canvas"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp">
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color"
+            android:columnCount="2">
+
+            <!--agrastas-->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/gooseberry" />
+                <TextView
+                    android:layout_column="1"
+                    android:layout_columnWeight="25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:text="@string/Agrastas"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+
+            <!-- aronija-->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/chokeberry" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/aronija">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Aronija"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--avietė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/raspberry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/aviete">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Aviete"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//braškė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/strawberry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/braske">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Braske"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//bruknė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/lingonberry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/brukne">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Brukne"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //gervuogė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/gervuoge">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Gervuoge"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//kriaušė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/pear" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/kriause">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Kriause"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--/lazdyno riešutas - galbūt pakeitsti į medį arba mažinti-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:src="@drawable/hazelnut" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/lazdynas">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Lazdynas"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //graikinis riešutas-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/walnut" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/graikiskas">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Graikiskas"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//medlieva-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/medlieva" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/medlieva">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Medlieva"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+
+
+            <!-- //melionas-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/melon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/melionas">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Melionas"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//mėlynės-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/blueberry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/melynes">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Melynes"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //obuolys-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/apple" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/obuolys">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Obuolys"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //pomidoras-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/tomato" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/pomidoras">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Pomidoras"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//serbentas-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/currant" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/serbentas">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Serbentas"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//slyva-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/plum" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/slyva">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Slyva"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //spanguolė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/cranberry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/spanguole">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Spanguole"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//svarainis-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/quince" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/svarainis">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Svarainis"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//šaltalankis-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/sea_buckthorn" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/saltalankis">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Saltalankis"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //šermukšnis-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/rowan" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/sermuksnis">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Sermuksnis"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //šilauogė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/blueberry_silauoge" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/silauoge">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Silauoge"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//šiliandra-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/medlar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/siliandra">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Siliandra"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//tekšė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/cloudberry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/tekse">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Tekse"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //trešnė-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/cherry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/tresne">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Tresne"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //vaivoras
+    -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/drunkard" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/vaivoras">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Vaivoras"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!-- //vynuogės-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/grapes" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/vynuoges">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Vynuoges"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--//vyšnia-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/cherries" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/vysnia">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Vysnia"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <!--  //žemuogės-->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/wild_strawberry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="25"
+                android:layout_margin="5dp"
+                android:id="@+id/zemuoges">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/Zemuoges"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

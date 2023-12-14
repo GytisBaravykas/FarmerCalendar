@@ -19,5 +19,10 @@ class WikiFirst : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.toolbar.myToolbar.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
+
+
+        
+
+
     }
 }

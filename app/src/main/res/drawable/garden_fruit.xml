@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="230dp">
+        <bitmap
+            android:gravity="top|left"
+
+            android:src="@drawable/garden"/>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="top|right"
+
+            android:src="@drawable/fruits" />
+    </item>
+
+    <item android:top="230dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <bitmap
+            android:gravity="bottom"
+
+            android:src="@drawable/dot"/>
+    </item>
+</layer-list>
