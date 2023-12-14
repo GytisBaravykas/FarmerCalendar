@@ -2,18 +2,15 @@ package com.example.farmercalendar
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
-import com.example.farmercalendar.databinding.ActivityMainBinding
-import com.example.farmercalendar.databinding.WikiDesignBinding
-import java.util.Objects
+import com.example.farmercalendar.databinding.WikiFruitBinding
 
-class WikiFirst : AppCompatActivity() {
-    private lateinit var binding: WikiDesignBinding
+class WikiFruit : AppCompatActivity() {
+    private lateinit var binding: WikiFruitBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = WikiDesignBinding.inflate(layoutInflater)
+        binding = WikiFruitBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar.myToolbar)
@@ -22,11 +19,15 @@ class WikiFirst : AppCompatActivity() {
         binding.toolbar.myToolbar.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
 
 
-        binding.bFruit.setOnClickListener {
-            val intent = Intent(this, WikiFruit::class.java)
+        binding.agrastas.setOnClickListener {
+            val intent = Intent(this, InfoFruit::class.java)
             startActivity(intent)
         }
 
+        binding.aronija.setOnClickListener {
+            val intent = Intent(this, InfoFruit::class.java)
+            startActivity(intent)
+        }
 
     }
 }
