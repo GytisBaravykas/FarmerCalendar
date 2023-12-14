@@ -1,3 +1,114 @@
 <resources>
-    <string name="app_name">Calendar Sample App</string>
+    <string name="app_name">Kalendorius</string>
+
+    /*vaisiai ir uogos*/
+    <string name="Agrastas" translatable="false">Agrastas</string>
+    <string name="Aronija" translatable="false">Aronija</string>
+    <string name="Aviete" translatable="false">Avietė</string>
+    <string name="Braske" translatable="false">Braškė</string>
+    <string name="Brukne" translatable="false">Bruknė</string>
+    <string name="Gervuoge" translatable="false">Gervuogė</string>
+    <string name="Kriause" translatable="false">Kriaušė</string>
+    <string name="Lazdynas" translatable="false">Lazdyno riešutas</string>
+    <string name="Graikiskas" translatable="false">Graikininis riešutas</string>
+    <string name="Medlieva" translatable="false">Medliava</string>
+    <string name="Melionas" translatable="false">Melionas</string>
+    <string name="Melynes" translatable="false">Mėlynės</string>
+    <string name="Obuolys" translatable="false">Obuolys</string>
+    <string name="Pomidoras" translatable="false">Pomidoras</string>
+    <string name="Serbentas" translatable="false">Serbentas</string>
+    <string name="Slyva" translatable="false">Slyva</string>
+    <string name="Spanguole" translatable="false">Spanguolė</string>
+    <string name="Svarainis" translatable="false">Svarainis</string>
+    <string name="Saltalankis" translatable="false">Šaltalankis</string>
+    <string name="Sermuksnis" translatable="false">Šermukšnis</string>
+    <string name="Silauoge" translatable="false">Šilauogė</string>
+    <string name="Siliandra" translatable="false">Šiliandra</string>
+    <string name="Tekse" translatable="false">Tekšė</string>
+    <string name="Tresne" translatable="false">Trešnė</string>
+    <string name="Vaivoras" translatable="false">Vaivoras (Girtuoklė)</string>
+    <string name="Vynuoges" translatable="false">Vynuogės</string>
+    <string name="Vysnia" translatable="false">Vyšnia</string>
+    <string name="Zemuoges" translatable="false">Žemuogės</string>
+
+
+    /* Daržovės*/
+    <string name="Agurkas" translatable="false">Agurkas</string>
+    <string name="Agurotis" translatable="false">Agurotis</string>
+    <string name="Artisokas" translatable="false">Artišokas</string>
+    <string name="Bulve" translatable="false">Bulvė</string>
+    <string name="Baklazanas" translatable="false">Baklažanas</string>
+    <string name="Baltaguzis" translatable="false">Baltagužis kopūstas</string>
+    <string name="Briuselio" translatable="false">Briuselio kopūstas</string>
+    <string name="Brokolis" translatable="false">Brokolis</string>
+    <string name="Burokelis" translatable="false">Burokėlis</string>
+    <string name="Cukinija" translatable="false">Cukinija</string>
+    <string name="Cukriniai" translatable="false">Cukriniai kukurūzai</string>
+    <string name="Cesnakas" translatable="false">Česnakas</string>
+    <string name="Darzine" translatable="false">Daržinė pupelė</string>
+    <string name="Darzinis" translatable="false">Daržinis poras</string>
+    <string name="Garbanotasis" translatable="false">Garbanotasis kopūstas</string>
+    <string name="Grieztis" translatable="false">Griežtis</string>
+    <string name="Guzinis" translatable="false">Gužinis kopūstas</string>
+    <string name="Kalafioras" translatable="false">Kalafioras</string>
+    <string name="Lapinis" translatable="false">Lapinis kopūstas</string>
+    <string name="Moliugas" translatable="false">Moliūgas</string>
+    <string name="Morka" translatable="false">Morka</string>
+    <string name="Topinambas" translatable="false">Topinambas</string>
+    <string name="Patisonas" translatable="false">Patisonas</string>
+    <string name="Paprika" translatable="false">Paprika</string>
+    <string name="Pastarnokas" translatable="false">Pastarnokas</string>
+    <string name="Pekino" translatable="false">Pekino kopūstas</string>
+    <string name="Pupos" translatable="false">Pupos</string>
+    <string name="Rabarbaras" translatable="false">Rabarbaras</string>
+    <string name="Raudonguzis" translatable="false">Raudongužis kopūstas</string>
+    <string name="Raudonziede" translatable="false">Raudonžiedė pupelė</string>
+    <string name="Ridikas" translatable="false">Ridikas</string>
+    <string name="Ridikelis" translatable="false">Ridikėlis</string>
+    <string name="Rope" translatable="false">Ropė</string>
+    <string name="Ropinis" translatable="false">Ropinis kopūstas</string>
+    <string name="Salieras" translatable="false">Salieras</string>
+    <string name="Savojos" translatable="false">Savojos kopūstas</string>
+    <string name="Svogunas" translatable="false">Svogūnas</string>
+    <string name="Sparagines" translatable="false">Šparaginės pupelės</string>
+    <string name="Spinatai" translatable="false">Špinatai</string>
+    <string name="Zirnis" translatable="false">Žirnis</string>
+
+
+    <!-- medziu prieziura-->
+
+
+    <!-- Geles (ju daug vėliau prideti) -->
+
+    <string name="settings_name">Nustatymai</string>
+
+    <!--savaitės trumpiniai-->
+    <string name="material_calendar_monday">Pr</string>
+    <string name="material_calendar_tuesday">An</string>
+    <string name="material_calendar_wednesday">Tr</string>
+    <string name="material_calendar_thursday">Kt</string>
+    <string name="material_calendar_friday">Pn</string>
+    <string name="material_calendar_saturday">Št</string>
+    <string name="material_calendar_sunday">Sk</string>
+
+    <!-- menesei -->
+    <array name="material_calendar_months_array">
+        <item>Sausis</item>
+        <item>Vasaris</item>
+        <item>Kovas</item>
+        <item>Balandis</item>
+        <item>Gegužė</item>
+        <item>Birželis</item>
+        <item>Liepa</item>
+        <item>Rugpjūtis</item>
+        <item>Rugsėjis</item>
+        <item>Spalis</item>
+        <item>Lapkritis</item>
+        <item>Gruodis</item>
+    </array>
+
+    <!--nezinau ar dar ju reikia -->
+    <string name="material_calendar_today_button">Šiandien</string>
+    <string name="material_calendar_positive_button">Gerai</string>
+    <string name="material_calendar_negative_button">Atšaukti</string>
 </resources>

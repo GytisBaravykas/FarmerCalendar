@@ -3,8 +3,8 @@ package com.example.farmercalendar
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
-import com.example.farmercalendar.MainActivity.Companion.CALENDAR_EXTRA
-import com.example.farmercalendar.MainActivity.Companion.NOTE_EXTRA
+import com.example.farmercalendar.CalendarActivity.Companion.CALENDAR_EXTRA
+import com.example.farmercalendar.CalendarActivity.Companion.NOTE_EXTRA
 import com.example.farmercalendar.databinding.ActivityNotePreviewBinding
 import com.example.farmercalendar.extensions.toSimpleDate
 import java.util.*

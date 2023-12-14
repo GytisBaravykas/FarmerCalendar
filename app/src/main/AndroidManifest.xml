@@ -18,6 +18,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".WikiFirst" />
+        <activity android:name=".CalendarActivity" />
         <activity android:name=".NotePreviewActivity" />
 
         <activity android:name=".AddNoteActivity" />
