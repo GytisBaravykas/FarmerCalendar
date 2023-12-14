@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/canvas"
+    android:orientation="vertical"
+    tools:context=".WikiFirst">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:background="@color/color"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/wiki_text"
+            android:layout_width="106dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:gravity="center"
+            android:text="Žinynas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/text"
+            app:layout_constraintBottom_toTopOf="@+id/b_flower" />
+<!--  vaisiai-->
+        <Button
+            android:id="@+id/b_fruit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Vaisiai ir uogos"
+            app:layout_constraintTop_toBottomOf="@+id/b_flower"
+            tools:ignore="MissingConstraints"
+            android:background="@color/button"
+            android:textColor="@color/buttontext" />
+<!--daržovės-->
+        <Button
+            android:id="@+id/b_greens"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Daržovės"
+            app:layout_constraintTop_toBottomOf="@+id/b_fruit"
+            tools:ignore="MissingConstraints"
+            android:background="@color/button"
+            android:textColor="@color/buttontext" />
+<!--geles mytykas-->
+        <Button
+            android:id="@+id/b_flower"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Gėlės"
+            tools:ignore="InvalidId,MissingConstraints"
+            android:background="@color/button"
+            android:textColor="@color/buttontext" />
+
+<!--medžio mygtukas-->
+        <Button
+            android:id="@+id/b_tree"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Medžiai"
+            app:layout_constraintTop_toBottomOf="@+id/b_greens"
+            tools:ignore="MissingConstraints"
+            android:background="@color/button"
+            android:textColor="@color/buttontext"/>
+    </LinearLayout>
+</LinearLayout>
