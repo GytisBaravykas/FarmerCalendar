@@ -21,11 +21,13 @@ class WikiFruit : AppCompatActivity() {
 
         binding.agrastas.setOnClickListener {
             val intent = Intent(this, InfoFruit::class.java)
+            intent.putExtra("EXTRA_MESSAGE", "Agrastas")
             startActivity(intent)
         }
 
         binding.aronija.setOnClickListener {
             val intent = Intent(this, InfoFruit::class.java)
+            intent.putExtra("EXTRA_MESSAGE", "Aronija")
             startActivity(intent)
         }
 
