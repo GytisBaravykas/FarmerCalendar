@@ -1,0 +1,38 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+<!-- ImageView for the image -->
+    <ImageView
+        android:id="@+id/itemImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_gravity="center_vertical" />
+
+    <!-- LinearLayout for the texts to be arranged vertically -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <!-- TextView for the first text -->
+        <TextView
+            android:id="@+id/itemTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Description 1"
+            android:textSize="17dp"/>
+
+        <!-- TextView for the second text below the first text -->
+        <TextView
+            android:id="@+id/itemTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Description 2"
+            android:textSize="12dp"/>
+    </LinearLayout>
+</LinearLayout>

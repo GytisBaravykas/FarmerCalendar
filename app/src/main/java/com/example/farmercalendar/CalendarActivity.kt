@@ -2,6 +2,11 @@ package com.example.farmercalendar
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.applandeo.materialcalendarview.CalendarView
 import com.applandeo.materialcalendarview.EventDay
@@ -16,7 +21,6 @@ import java.util.Calendar
 class CalendarActivity : AppCompatActivity(), OnDayClickListener, OnSelectDateListener {
 
     private lateinit var binding: CalendarActivityBinding
-
     private val notes = mutableMapOf<EventDay, String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +31,52 @@ class CalendarActivity : AppCompatActivity(), OnDayClickListener, OnSelectDateLi
         binding.fabButton.setOnClickListener { openDatePicker() }
         binding.calendarView.setOnDayClickListener(this)
 
+        setupEvents()
+        setupInfoViews()
+
+        setSupportActionBar(binding.toolbar.myToolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.toolbar.myToolbar.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
     }
+
+    private fun setupEvents() {
+        val events: MutableList<EventDay> = ArrayList()
+
+        for (x in 0..31) {
+            val calendar = Calendar.getInstance().apply {
+                set(Calendar.YEAR, 2023)
+                set(Calendar.MONTH, Calendar.DECEMBER)
+                set(Calendar.DAY_OF_MONTH, x)
+            }
+            events.add(EventDay(calendar, if (x < 10) R.drawable.two_garden_tree else R.drawable.two_garden_flower))
+        }
+
+        binding.calendarView.setEvents(events)
+    }
+
+    private fun setupInfoViews() {
+        val inflater = LayoutInflater.from(this)
+        val infoView1 = generateInfoView(inflater, R.drawable.garden, "Naminių gėlių sodinimas", "2023-12-01 - 2023-12-10")
+        val infoView2 = generateInfoView(inflater, R.drawable.flower, "Gėlių apklojimas sniegu", "2023-12-10 - 2023-12-31")
+
+        binding.grid.addView(infoView1)
+        binding.grid.addView(infoView2)
+    }
+
+    private fun generateInfoView(inflater: LayoutInflater, imageResource: Int, job: String, dates: String): View {
+        val info = inflater.inflate(R.layout.calendar_info, binding.grid, false)
+
+        val itemImageView: ImageView = info.findViewById(R.id.itemImageView)
+        val itemTextView1: TextView = info.findViewById(R.id.itemTextView1)
+        val itemTextView2: TextView = info.findViewById(R.id.itemTextView2)
+
+        itemImageView.setImageResource(imageResource)
+        itemTextView1.text = job
+        itemTextView2.text = dates
+
+        return info
+    }
+
 
     private fun openDatePicker() {
         DatePickerBuilder(this, this)
